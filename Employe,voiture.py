@@ -3,19 +3,4 @@ class Employe():
         self.numeroPermis = numeroPermis
         self.nom = nom
         self.prenom = prenom
-        self.voitureService= None
-    def afficher_informations(self):
-        print(f"l'Employe qui as le numero de permis {self.numeroPermis} est nomee {self.nom} {self.prenom}")
-        if self.voitureService != None :
-            print(f"la voiture  attribuée est immatriculer {self.matricule} anneee {self.annee} de marque {self.marque } qui as parcorue { self.kilometrage} kilometre")
-        else:
-            print("aucune voiture attribuée")
-
-
-class Voiture:
-    def __init__(self, matricule:str,annee:int, marque:str,kilometrage:int):
-        self.matricule = matricule
-        self.annee = annee
-        self.marque = marque
-        self.kilometrage = kilometrage
-        self.chauffeur = None
+        self.liste_voitures = []
