@@ -13,5 +13,12 @@ class Employe():
                 print("la voiture est attribue deja a un chauffeur")
         else:
             print("le chauffeur a deja un vehicule de service")
+    def retirer_voiture(self):
+        if self.voitureService!=None:
+            self.voitureService.chauffeur=None
+            self.voitureService = None
+        else:
+            print("voiture non disponible")
+
 
 
