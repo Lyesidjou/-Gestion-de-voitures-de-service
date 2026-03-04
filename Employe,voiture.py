@@ -31,3 +31,9 @@ class Voiture:
         self.marque = marque
         self.kilometrage = kilometrage
         self.chauffeur = None
+    def affecter_chauffeur(self):
+        print(f"la voiture est immatricule {self.matricule} annee {self.annee} marque {self.marque} qui as parcorue {self.kilometrage}")
+        if self.chauffeur!=None:
+            print(f"le chauffeur de cette voiture est {self.chauffeur.nom} {self.chauffeur.prenom}")
+        else:
+            print("le chauffeur non disponible")
