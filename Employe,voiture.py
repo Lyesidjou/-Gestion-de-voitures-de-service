@@ -23,3 +23,11 @@ class Employe:
         print(f"l'employee qui possede le numero {self.numeroPermis} nomee {self.nom} {str(self.prenom)}")
         if self.voitureService!=None:
             print(f"le chauffeur possede la voiture immatriculé {self.voitureService.matricule} de la marque {self.voitureService.marque}")
+
+class Voiture:
+    def __init__(self, matricule:str, annee:int, marque:str, kilometrage:int):
+        self.matricule = matricule
+        self.annee = annee
+        self.marque = marque
+        self.kilometrage = kilometrage
+        self.chauffeur = None
