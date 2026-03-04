@@ -37,8 +37,15 @@ class Voiture:
             print(f"le chauffeur de cette voiture est {self.chauffeur.nom} {self.chauffeur.prenom}")
         else:
             print("le chauffeur non disponible")
-    emp1=Employe("LY5687622", "Lyes","Idjourdikane")
-    emp1.afficherInformations()
-    emp2=Employe("Il8982334","lyess","lyess")
-    emp2.afficherInformations()
+
+emp1=Employe("LY5687622", "Lyes","Idjourdikane")
+emp1.afficherInformations()
+emp2=Employe("Il8982334","lyess","lyess")
+emp2.afficherInformations()
+v1=Voiture("GLSV 67",2024,"HONDA",120000)
+v1.afficherInformations()
+v2=Voiture("HYTR 11",2016,"TOYOTA",200000)
+v2.afficherInformations()
+v3=Voiture("QWER 45",2021,"FIAT",130000)
+v3.afficherInformations()
 
