@@ -1,4 +1,4 @@
-class Employe():
+class Employe:
     def __init__(self, numeroPermis:str, nom:str, prenom:str):
         self.numeroPermis = numeroPermis
         self.nom = nom
@@ -19,6 +19,7 @@ class Employe():
             self.voitureService = None
         else:
             print("voiture non disponible")
-
-
-
+    def afficherInformations(self):
+        print(f"l'employee qui possede le numero {self.numeroPermis} nomee {self.nom} {str(self.prenom)}")
+        if self.voitureService!=None:
+            print(f"le chauffeur possede la voiture immatriculé {self.voitureService.matricule} de la marque {self.voitureService.marque}")
